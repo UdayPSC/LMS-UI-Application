@@ -1,0 +1,125 @@
+<mvc:View controllerName="lms.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:unified="sap.ui.unified"
+    xmlns:core="sap.ui.core">
+    <Page id="page" class="noHeader">
+        <!-- Custom Header -->
+        <HBox id="headerContainer" class="headerContainer">
+            <VBox id="headerLeft" class="headerLeft">
+                <Text id="headerCompany" text="HCLTech" class="headerCompany"/>
+                <Text id="headerTitle" text="My Leave" class="headerTitle"/>
+            </VBox>
+            <HBox id="headerRight" class="headerRight">
+                <Button id="headerHintButton" icon="sap-icon://hint" tooltip="Hints" class="headerIconButton"/>
+                <Button id="headerMessageButton" icon="sap-icon://message-popup" tooltip="Messages" class="headerIconButton"/>
+                <Button id="headerHelpButton" icon="sap-icon://question-mark" tooltip="Help" class="headerIconButton"/>
+                <Button id="headerFavoriteButton" icon="sap-icon://favorite" tooltip="Favorites" class="headerIconButton"/>
+                <Button id="headerMenuButton" icon="sap-icon://menu" tooltip="Menu" class="headerIconButton"/>
+                <VBox id="headerEmployeeBox" class="headerEmployeeBox">
+                    <Text id="headerEmployeeId" text="52172833" class="headerEmployeeId"/>
+                    <Text id="headerEmployeeRole" text="Employee" class="headerEmployeeRole"/>
+                </VBox>
+                <VBox id="headerUserBox" class="headerUserBox">
+                    <Text id="headerUserInitials" text="US" class="headerUserInitials"/>
+                </VBox>
+            </HBox>
+        </HBox>
+        <VBox id="contentContainer" class="contentContainer">
+            <HBox id="mainContent" class="mainContent">
+                <VBox id="leftContent" class="leftContent">
+                    <!-- Leave Information Section -->
+                    <Panel id="annualLeavePanel" headerText="Annual Leave" expandable="false" class="leavePanel">
+                        <VBox id="annualLeaveContent" class="leavePanelContent">
+                            <HBox id="annualLeaveInnerContent" class="leavePanelInnerContent">
+                                <core:Icon id="annualLeaveIcon" src="sap-icon://create-leave-request" size="2rem" class="leaveIcon"/>            
+                                <HBox id="annualLeaveDetailsContainer" class="leaveDetailsContainer">
+                                    <VBox id="annualLeaveDetailsAvailable" class="leaveDetails">
+                                        <Text id="annualLeaveAmountAvailable" text="24.00" class="leaveAmount"/>
+                                        <Text id="annualLeaveStatusAvailable" text="AVAILABLE" class="leaveStatus"/>
+                                    </VBox>
+                                    <VBox id="annualLeaveDetailsAvailed" class="leaveDetails">
+                                        <Text id="annualLeaveAmountAvailed" text="0.00" class="leaveAmount"/>
+                                        <Text id="annualLeaveStatusAvailed" text="AVAILED" class="leaveStatus"/>
+                                    </VBox>
+                                </HBox>
+                            </HBox>
+                        </VBox>
+                    </Panel>
+                    <Panel id="compOffPanel" headerText="Compensatory Off" expandable="false" class="leavePanel">
+                        <VBox id="compOffContent" class="leavePanelContent">
+                            <HBox id="compOffInnerContent" class="leavePanelInnerContent">
+                                <core:Icon id="compOffIcon" src="sap-icon://time-off" size="2rem" class="leaveIcon"/>
+                                <HBox id="compOffDetailsContainer" class="leaveDetailsContainer">
+                                    <VBox id="compOffDetailsAvailable" class="leaveDetails">
+                                        <Text id="compOffAmountAvailable" text="0.00" class="leaveAmount"/>
+                                        <Text id="compOffStatusAvailable" text="AVAILABLE" class="leaveStatus"/>
+                                    </VBox>
+                                    <VBox id="compOffDetailsAvailed" class="leaveDetails">
+                                        <Text id="compOffAmountAvailed" text="0.00" class="leaveAmount"/>
+                                        <Text id="compOffStatusAvailed" text="AVAILED" class="leaveStatus"/>
+                                    </VBox>
+                                </HBox>
+                            </HBox>
+                        </VBox>
+                    </Panel>
+                    <Panel id="myLeavePanel" headerText="My Leave" expandable="false" class="leavePanel">
+                        <VBox id="myLeaveContent" class="leavePanelContent">
+                            <HBox id="myLeaveInnerContent" class="leavePanelInnerContent">
+                                <core:Icon id="myLeaveIcon" src="sap-icon://person-placeholder" size="2rem" class="leaveIcon"/>
+                                <HBox id="myLeaveDetailsContainer" class="leaveDetailsContainer">
+                                    <VBox id="myLeaveDetailsAvailable" class="leaveDetails">
+                                        <Text id="myLeaveAmountAvailable" text="1.00" class="leaveAmount"/>
+                                        <Text id="myLeaveStatusAvailable" text="AVAILABLE" class="leaveStatus"/>
+                                    </VBox>
+                                    <VBox id="myLeaveDetailsAvailed" class="leaveDetails">
+                                        <Text id="myLeaveAmountAvailed" text="0.00" class="leaveAmount"/>
+                                        <Text id="myLeaveStatusAvailed" text="AVAILED"/>
+                                    </VBox>
+                                </HBox>
+                            </HBox>
+                        </VBox>
+                    </Panel>
+                    <Panel id="restrictedHolidayPanel" headerText="Restricted Holiday" expandable="false" class="leavePanel">
+                        <VBox id="restrictedHolidayContent" class="leavePanelContent">
+                            <HBox id="restrictedHolidayInnerContent" class="leavePanelInnerContent">
+                                <core:Icon id="restrictedHolidayIcon" src="sap-icon://calendar" size="2rem" class="leaveIcon"/>
+                                <HBox id="restrictedHolidayDetailsContainer" class="leaveDetailsContainer">
+                                    <VBox id="restrictedHolidayDetailsAvailable" class="leaveDetails">
+                                        <Text id="restrictedHolidayAmountAvailable" text="4.00" class="leaveAmount"/>
+                                        <Text id="restrictedHolidayStatusAvailable" text="AVAILABLE" class="leaveStatus"/>
+                                    </VBox>
+                                    <VBox id="restrictedHolidayDetailsAvailed" class="leaveDetails">
+                                        <Text id="restrictedHolidayAmountAvailed" text="0.00" class="leaveAmount"/>
+                                        <Text id="restrictedHolidayStatusAvailed" text="AVAILED" class="leaveStatus"/>
+                                    </VBox>
+                                </HBox>
+                            </HBox>
+                        </VBox>
+                    </Panel>
+                </VBox>
+                <VBox id="middleContent" class="middleContent">
+                    <!-- Added text above the calendar -->
+                    <Text id="selectLeaveText" text="Select your leave dates" class="selectLeaveText"/>
+                    <unified:Calendar id="leaveCalendar" singleSelection="false" width="100%" class="largeCalendar"/>
+                    <Button id="applyLeaveButton" text="Apply" press="onApplyPress" class="applyButton" />
+                </VBox>
+                <VBox id="rightContent" class="rightContent">
+                    <!-- Holiday List as List -->
+                    <List id="holidayList" items="{holidayModel>/holidays}" class="holidayList">
+                        <items>
+                            <StandardListItem id="_IDGenStandardListItem1" title="{holidayModel>date}" description="{holidayModel>description}" icon="sap-icon://calendar"/>
+                        </items>
+                    </List>
+                </VBox>
+            </HBox>
+        </VBox >
+        <!-- Footer -->
+        <VBox id="footerContainer" class="footerContainer">
+            <HBox id="footerContent" class="footerContent">
+                <Text id="footerText" text="Best viewed on the latest versions of MS Edge, Chrome or Safari." class="footerText"/>
+                <Text id="footerCompany" text="HCL" class="footerCompany"/>
+            </HBox>
+        </VBox>
+    </Page>
+</mvc:View>

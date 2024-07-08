@@ -1,0 +1,242 @@
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.noHeader .sapMPageHeader {
+  display: none !important;
+}
+
+.pageContent {
+  margin-top: 60px; 
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #3b006e, #2d8aff);
+  height: 60px;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerCompany {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.headerTitle {
+  font-size: 14px;
+  color: white;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.headerIconButton {
+  margin-left: 10px;
+  color: white;
+}
+
+.headerEmployeeBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  color: white;
+}
+
+.headerEmployeeId {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.headerEmployeeRole {
+  font-size: 12px;
+}
+
+.headerUserBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: #3779e1;
+  color: white;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.headerUserInitials {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #3b006e, #2d8aff);
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.footerText {
+  color: white;
+  font-size: 12px;
+}
+
+.footerCompany {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contentContainer {
+  background-color: white;
+  margin: 10px;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: calc(100vh - 100px);
+  padding: 20px;
+}
+
+.leftContent, .middleContent, .rightContent {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px; 
+}
+
+.leftContent {
+  flex: 0 0 25%; 
+  overflow-y: auto; 
+}
+
+.middleContent {
+  flex: 1 1 50%; 
+}
+
+.rightContent {
+  flex: 0 0 20%; 
+  overflow-y: auto; 
+}
+
+.selectLeaveText {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.largeCalendar {
+  width: 100%;
+}
+
+.applyButton {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.leavePanel {
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.leavePanel .sapMPanelHdr {
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #ddd;
+}
+
+.leavePanel .sapMPanelHdr .sapMPanelHdrText {
+  font-size: 14px;
+  font-weight: bold;
+  color: #00ACC1;
+}
+
+.leavePanelContent {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leavePanelInnerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.leaveIcon {
+  color: #00ACC1;
+  margin-right: 10px;
+}
+
+.leaveDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px; 
+}
+
+.leaveAmount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ACC1;
+  margin-bottom: 5px;
+}
+
+.leaveStatus {
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+}
+
+.leaveDetailsContainer {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.sapMSLITitle, .sapMSLITitleOnly {
+  font-size: 2rem;
+  color: #1d2d3e;
+  font-weight: bold;
+}
